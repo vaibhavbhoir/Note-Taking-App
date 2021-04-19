@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Taking App</title>
+    <script src="https://kit.fontawesome.com/a378a7cdc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <h1>Hello Heroku App</h1>
+    <h1>Note Taking App</h1>
+    <p>Notes</p>
+    <form id="post_note" method="POST">
+        <input type="text" name="newNote" placeholder="Create Note" />
+        <button id="create" name="createsubmit" type="submit" >Create Note</button>
+    </form>
+
+    <div id="results">
+
+    </div>
+    <div id="modal">
+
+    </div>
+    <script src="api.js"></script>
 </body>
+
 </html>

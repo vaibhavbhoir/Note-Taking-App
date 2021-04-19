@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
 router.delete('/:id', getNote, async (req, res) => {
     try {
         await res.note.remove();
-        res.json({ message: 'Deleted Note' });
+        res.json({ message: 'Deleted Note'});
     } catch (err) {
         res.status(500).json({ message: 'Could not find note' });
     }
